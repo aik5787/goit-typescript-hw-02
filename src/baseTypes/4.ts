@@ -3,6 +3,12 @@
   щоб гарантувати, що перший елемент завжди буде рядком, а другий числом?
 */
 
-let person: [string, number] = ['Max', 21];
+
+interface Person {
+  0: string;
+  1: number;
+}
+
+let person: Person = ['Max', 21];
 
 export {};
